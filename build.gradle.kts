@@ -35,3 +35,10 @@ kotlin {
 application {
     mainClass.set("MainKt")
 }
+tasks.withType<Jar> {
+    manifest {
+        attributes(
+            "Main-Class" to "MainKt"
+        )
+    }
+}
