@@ -3,6 +3,6 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY . .
 
-RUN ./gradlew build
+RUN ./gradlew shadowJar
 
-CMD ["java", "-jar", "build/libs/telegrambot-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "build/libs/telegrambot.jar"]
