@@ -1,6 +1,6 @@
 object AppStrings {
     val welcomeText = """
-     *Welcome to GrindBot* 🔥
+     *Welcome to HabitTrackerBot* 🔥
 
     Your personal assistant to track your:
     - *Goals* 🎯

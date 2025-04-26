@@ -136,6 +136,7 @@ fun main(args: Array<String>) {
                 bot.sendMessage(
                     ChatId.fromId(message.chat.id),
                     text = welcomeText,
+                    parseMode = ParseMode.MARKDOWN,
                     replyMarkup = mainMenuKeyboardMarkup
                 )
             }
