@@ -1,6 +1,8 @@
 plugins {
     kotlin("jvm") version "1.9.23"
     application
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+
 }
 
 group = "org.example"
@@ -40,5 +42,13 @@ tasks.withType<Jar> {
         attributes(
             "Main-Class" to "MainKt"
         )
+    }
+}
+tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    archiveBaseName.set("telegrambot")
+    archiveClassifier.set("")
+    archiveVersion.set("")
+    manifest {
+        attributes(mapOf("Main-Class" to "MainKt"))
     }
 }

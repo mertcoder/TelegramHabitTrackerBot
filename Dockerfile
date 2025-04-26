@@ -1,8 +1,6 @@
 FROM openjdk:17-jdk-slim
 
 WORKDIR /app
-COPY . .
+COPY build/libs/telegrambot.jar telegrambot.jar
 
-RUN ./gradlew shadowJar
-
-CMD ["java", "-jar", "build/libs/telegrambot.jar"]
+CMD ["java", "-jar", "telegrambot.jar"]
