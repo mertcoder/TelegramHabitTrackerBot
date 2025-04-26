@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1>HabitTrackerBot – Telegram Habit Tracker & Goal Manager 🧐🚀</h1>
+  <h1>HabitTrackerBot – Telegram Habit Tracker & Goal Manager.</h1>
       <img src="https://github.com/user-attachments/assets/6e212a07-7718-411b-b93b-a7918e19817f" width="200" />
 
   <p>HabitTrackerBot is a productivity-focused Telegram bot that helps you build strong daily routines, track your habits, and crush your long-term goals.</p>
